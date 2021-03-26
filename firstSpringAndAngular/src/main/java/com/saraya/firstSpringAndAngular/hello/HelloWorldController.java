@@ -11,7 +11,7 @@ import com.saraya.firstSpringAndAngular.bean.HelloWorldBean;
 @CrossOrigin(origins="http://localhost:4200")
 @RestController
 public class HelloWorldController {
-	
+//	hjhhd
 	
 	@GetMapping("/hello-world")
 	public String helloWorld() {
