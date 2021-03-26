@@ -21,12 +21,12 @@ public class HelloWorldController {
 	@GetMapping("/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
 		//throw new RuntimeException("U get some error");
-		return new HelloWorldBean("Hello World from the Bean how are you with github");
+		return new HelloWorldBean("Hello World from the Bean to the bean how are you with github");
 	}
 	
 	@GetMapping("/hello-world-bean/{name}")
 	public HelloWorldBean helloWorldBeanWithPathVariable(@PathVariable String name) {
 		//throw new RuntimeException("U get some error");
-		return new HelloWorldBean(String.format("Hello World from %s", name));
+		return new HelloWorldBean(String.format("Hello we love coding World from %s", name));
 	}
 }
