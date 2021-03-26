@@ -15,13 +15,13 @@ public class HelloWorldController {
 	
 	@GetMapping("/hello-world")
 	public String helloWorld() {
-		return "Hello World";
+		return "Hello World to github";
 	}
 	
 	@GetMapping("/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
 		//throw new RuntimeException("U get some error");
-		return new HelloWorldBean("Hello World from the Bean how are you");
+		return new HelloWorldBean("Hello World from the Bean how are you with github");
 	}
 	
 	@GetMapping("/hello-world-bean/{name}")
