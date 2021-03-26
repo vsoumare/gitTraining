@@ -15,18 +15,22 @@ public class HelloWorldController {
 	
 	@GetMapping("/hello-world")
 	public String helloWorld() {
-		return "Hello World";
+		return "Hello World to github";
 	}
 	
 	@GetMapping("/hello-world-bean")
 	public HelloWorldBean helloWorldBean() {
 		//throw new RuntimeException("U get some error");
-		return new HelloWorldBean("Hello World from the Bean how are you");
+
+		return new HelloWorldBean("Hello World from the Bean how are you with github, We love Git");
+
 	}
 	
 	@GetMapping("/hello-world-bean/{name}")
 	public HelloWorldBean helloWorldBeanWithPathVariable(@PathVariable String name) {
 		//throw new RuntimeException("U get some error");
-		return new HelloWorldBean(String.format("Hello World from %s", name));
+
+		return new HelloWorldBean(String.format("Hello we love coding World from %s", name));
+
 	}
 }
